@@ -50,3 +50,5 @@ body{background:#020603}
 .btn-emerald,.btn-glass{border-radius:999px;padding:13px 19px}.send-btn{border-radius:14px}.feature-grid article{transition:transform .25s,border-color .25s,box-shadow .25s}.feature-grid article:hover{transform:translateY(-3px);border-color:rgba(93,226,151,.4)}
 .road-item{border-radius:20px;margin:10px 0;padding:18px 20px}.road-item>b{border-radius:13px}footer{border-radius:24px 24px 0 0;margin-top:16px}
 @media(max-width:700px){.topbar{margin:0 5px;border-radius:0 0 18px 18px}.model-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.status-grid{grid-template-columns:1fr}.current-model-panel{margin-top:28px;padding:18px;border-radius:22px}.status-hero-card{border-radius:22px}.hero-brand-fallback{padding:40px 6px 20px}.fallback-emblem{width:85px;height:100px}.fallback-motto{letter-spacing:1.8px;font-size:7px}.status-tile{border-radius:20px}}
+
+.prealpha.online{color:#70e5a5;border-color:#43c77c;background:#07301a}.chat-head .clear-btn{padding:7px 10px;border:1px solid rgba(85,188,119,.22);border-radius:12px}.chat-head button.clear-btn:hover{color:#64e39b;border-color:#64e39b}.message.assistant[model=true]{border-color:#3e9c65}
