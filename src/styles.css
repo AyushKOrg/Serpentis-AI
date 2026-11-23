@@ -18,3 +18,35 @@
 .surface,.login-modal{border-radius:26px}.key-box,.endpoint-box{border-radius:16px}.road-item{border:1px solid rgba(95,193,129,.17);margin-bottom:10px;border-radius:17px}.road-item:last-of-type{border-bottom:1px solid rgba(95,193,129,.17)}
 footer{background:rgba(2,7,4,.52);backdrop-filter:blur(18px);border-color:rgba(95,193,129,.15)}
 @media(max-width:640px){.feature-grid article{border-radius:16px}.chat-shell,.surface,.login-modal{border-radius:20px}.topbar{backdrop-filter:blur(24px)}.pillars{border-radius:18px}}
+
+/* SERPENTIS brand-led Liquid Glass pass: smoother radius, brighter emerald depth */
+:root{--radius-xl:30px;--radius-lg:24px;--radius-md:18px;--radius-sm:13px;--glass-edge:rgba(141,222,166,.24);--glass-highlight:rgba(235,255,241,.1)}
+body{background:#020603}
+.serp-site{background:radial-gradient(ellipse at 50% -16%,rgba(24,95,49,.6),transparent 56%),radial-gradient(ellipse at 90% 30%,rgba(10,60,30,.17),transparent 42%),#020603}
+.ambient{opacity:.25;filter:blur(100px)}
+.ambient-a{left:-260px;top:260px;opacity:.28}.ambient-b{right:-270px;top:780px;opacity:.2}
+.topbar{border-radius:0 0 22px 22px;margin:0 12px;padding:0 clamp(14px,4vw,52px);border:1px solid rgba(120,210,147,.12);border-top:0;background:rgba(2,7,4,.62);box-shadow:0 18px 50px rgba(0,0,0,.2)}
+.brand-fallback{display:flex;align-items:center;gap:9px}.brand-fallback-mark{width:35px;height:35px;border-radius:12px;border:1px solid #82d8a0;background:linear-gradient(140deg,#153d24,#07140a);display:grid;place-items:center;color:#d6e9db;font-family:Georgia,serif;font-size:22px;font-style:italic;box-shadow:inset 0 1px #ffffff22,0 0 22px #2f985222}.brand-fallback-name{font-family:Georgia,serif;letter-spacing:1.3px;font-size:16px;color:#d9e5dd}.brand-fallback-name small{color:#64dc9c;font:9px 'DM Mono';letter-spacing:2px;margin-left:5px}
+.hero-brand-fallback{place-items:center;text-align:center;gap:12px;padding:55px 10px 28px}.fallback-emblem{width:108px;height:122px;display:grid;place-items:center;border:1px solid #70d79b;border-radius:28px 28px 38px 38px;clip-path:polygon(50% 0,100% 22%,92% 78%,50% 100%,8% 78%,0 22%);background:radial-gradient(circle at 50% 35%,#1a4b2a,#030805 70%);font:italic 76px Georgia,serif;color:#c8dfd0;text-shadow:0 0 25px #45d89144}.fallback-word{font:clamp(36px,7vw,70px) Georgia,serif;letter-spacing:.12em;color:#dbe6df;text-shadow:0 3px 24px #000}.fallback-word span{color:#55d994;font:12px 'DM Mono';letter-spacing:3px;margin-left:12px}.fallback-motto{font:9px 'DM Mono';letter-spacing:3px;color:#8bb89a}
+.current-model-panel,.status-hero-card,.status-tile{border:1px solid var(--glass-edge);border-radius:26px;background:linear-gradient(145deg,rgba(20,54,29,.46),rgba(3,10,5,.66));backdrop-filter:blur(26px) saturate(140%);-webkit-backdrop-filter:blur(26px) saturate(140%);box-shadow:inset 0 1px 0 var(--glass-highlight),0 20px 60px rgba(0,0,0,.18)}
+.current-model-panel{max-width:850px;margin:40px auto 0;padding:clamp(18px,4vw,30px)}
+.current-model-top,.status-card-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.eyebrow{font:9px 'DM Mono';letter-spacing:1.7px;color:#80b894}
+.status-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid #4e9a6b55;border-radius:999px;padding:8px 12px;font:8px 'DM Mono';letter-spacing:1px;color:#a7d7b5;background:rgba(13,40,20,.5)}
+.status-badge i{width:7px;height:7px;border-radius:50%;background:#48df94;box-shadow:0 0 12px #48df94;animation:serp-pulse 1.5s ease-in-out infinite}
+@keyframes serp-pulse{50%{opacity:.35;transform:scale(.8)}}
+.current-model-panel h2,.status-hero-card h2{font:clamp(24px,3vw,32px) Georgia,serif;color:#e1eee5;margin:22px 0 8px}.current-model-panel h2 em{font-style:normal;color:#60d99b;font-size:.6em;font-family:'DM Mono'}
+.current-model-panel>p{max-width:650px;font-size:12px;line-height:1.75;color:#91a899}
+.model-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:22px 0}
+.model-stats>div{padding:15px 12px;border:1px solid rgba(122,204,147,.15);border-radius:16px;background:rgba(2,9,4,.38)}
+.model-stats strong{display:block;font:12px 'DM Mono';color:#cfe8d7;overflow-wrap:anywhere}.model-stats small{display:block;margin-top:7px;font:7px 'DM Mono';letter-spacing:1px;color:#779582}
+.status-link{display:inline-flex;align-items:center;gap:9px;font:9px 'DM Mono';letter-spacing:1.3px;color:#58db97;padding:10px 2px}.status-link:hover{color:#b8f4ce}
+.model-status-page .page-title{margin-bottom:32px}.status-hero-card{padding:clamp(18px,4vw,32px)}.status-hero-card h2{margin:15px 0}
+.status-progress-track{height:5px;border-radius:999px;background:#16321f;overflow:hidden;margin:24px 0 12px}.status-progress-indeterminate{height:100%;width:35%;border-radius:999px;background:linear-gradient(90deg,#1a6338,#6ce5a6,#1a6338);animation:status-sweep 2s ease-in-out infinite}
+@keyframes status-sweep{0%{transform:translateX(-110%)}100%{transform:translateX(310%)}}
+.status-note{font-size:11px;line-height:1.8;color:#91a899}
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0}.status-tile{padding:22px}.status-tile>span{font:8px 'DM Mono';letter-spacing:1.5px;color:#7eab8c}.status-tile h3{font:21px Georgia,serif;color:#d8e8dd;margin:14px 0 8px}.status-tile p{font-size:11px;line-height:1.8;color:#91a899}.status-tile b{display:inline-block;font:8px 'DM Mono';letter-spacing:1px;color:#5bd994;border:1px solid #4c996455;border-radius:999px;padding:7px 10px;margin-top:6px}.status-back{margin:6px auto;display:flex;width:max-content}
+.chat-shell,.surface,.login-modal,.road-item,.road-vision,.endpoint-box,.feature-grid article,.pillars,.suggestions button,.chat-composer,.message,.key-box{border-radius:22px}.chat-shell{border-radius:28px}.chat-head{height:auto;min-height:60px;padding:12px 16px;border-radius:26px 26px 0 0}.chat-composer{border-radius:20px;margin:0 14px 12px;padding:12px}
+.btn-emerald,.btn-glass{border-radius:999px;padding:13px 19px}.send-btn{border-radius:14px}.feature-grid article{transition:transform .25s,border-color .25s,box-shadow .25s}.feature-grid article:hover{transform:translateY(-3px);border-color:rgba(93,226,151,.4)}
+.road-item{border-radius:20px;margin:10px 0;padding:18px 20px}.road-item>b{border-radius:13px}footer{border-radius:24px 24px 0 0;margin-top:16px}
+@media(max-width:700px){.topbar{margin:0 5px;border-radius:0 0 18px 18px}.model-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.status-grid{grid-template-columns:1fr}.current-model-panel{margin-top:28px;padding:18px;border-radius:22px}.status-hero-card{border-radius:22px}.hero-brand-fallback{padding:40px 6px 20px}.fallback-emblem{width:85px;height:100px}.fallback-motto{letter-spacing:1.8px;font-size:7px}.status-tile{border-radius:20px}}
